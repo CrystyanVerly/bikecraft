@@ -1,39 +1,38 @@
 {
-  "name": "bikcraft",
-  "version": "0.0.0",
-  "private": true,
-  "description": "Refactored version of the Bikcraft project from Origamid.",
-  "homepage": "https://github.com/CrystyanVerly/bikcraft#readme",
-  "bugs": {
-    "url": "https://github.com/CrystyanVerly/bikcraft/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CrystyanVerly/bikcraft.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "module",
-  "main": "vite.config.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "detect-libc": "^2.1.2",
-    "fdir": "^6.5.0",
-    "lightningcss": "^1.33.0",
-    "lightningcss-win32-x64-msvc": "^1.33.0",
-    "nanoid": "^3.3.19",
-    "picocolors": "^1.1.1",
-    "picomatch": "^4.0.7",
-    "postcss": "^8.5.28",
-    "rolldown": "^1.2.8",
-    "source-map-js": "^1.2.1",
-    "tinyglobby": "^0.2.17"
-  },
-  "devDependencies": {
-    "vite": "^8.3.0"
-  }
+	"name": "bikcraft",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Refactored version of the Bikcraft project from Origamid.",
+	"homepage": "https://github.com/CrystyanVerly/bikcraft#readme",
+	"bugs": {
+		"url": "https://github.com/CrystyanVerly/bikcraft/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CrystyanVerly/bikcraft.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"type": "module",
+	"main": "vite.config.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"detect-libc": "^2.1.2",
+		"fdir": "^6.5.0",
+		"lightningcss": "^1.33.0",
+		"nanoid": "^3.3.19",
+		"picocolors": "^1.1.1",
+		"picomatch": "^4.0.7",
+		"postcss": "^8.5.28",
+		"rolldown": "^1.2.8",
+		"source-map-js": "^1.2.1",
+		"tinyglobby": "^0.2.17"
+	},
+	"devDependencies": {
+		"vite": "^8.3.0"
+	}
 }
