@@ -10,7 +10,7 @@ The original project was restructured and adapted to a modern development workfl
 
 ## 🚀 Live Demo
 
-> **[View the live project](YOUR_VERCEL_URL_HERE)**
+> **[View the live project](https://bikecraft-eight.vercel.app/)**
 
 ---
 
