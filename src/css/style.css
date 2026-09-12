@@ -1,0 +1,46 @@
+/* Reset */
+@import './modules/reset/reset.css';
+
+/* Utilities */
+@import './modules/utilities/components.css';
+@import './modules/utilities/gap-size.css';
+@import './modules/utilities/typography.css';
+@import './modules/utilities/colors.css';
+@import './modules/utilities/form.css';
+@import './modules/utilities/animation.css';
+
+/* Global */
+@import './modules/global/header.css';
+@import './modules/global/footer.css';
+
+/* Home */
+@import './modules/home/main.css';
+@import './modules/home/bikelist.css';
+@import './modules/home/technology.css';
+@import './modules/home/partners.css';
+@import './modules/home/declaration.css';
+@import './modules/home/insurance.css';
+
+/* Terms */
+@import './modules/terms/terms.css';
+
+/* Bikes */
+@import './modules/bikes/bikes.css';
+
+/* Bike */
+@import './modules/bike/bike.css';
+
+/* Insurance */
+@import './modules/insurance/insurance.css';
+@import './modules/bike/insurance-bike.css';
+
+/* Contact */
+@import './modules/contact/contact.css';
+@import './modules/contact/stores.css';
+
+/* Budget */
+@import './modules/budget/budget.css';
+
+/* Responsive */
+@import './modules/responsive/responsive-home.css';
+@import './modules/responsive/responsive-inner-pages.css';

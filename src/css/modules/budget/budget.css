@@ -1,0 +1,221 @@
+#budget {
+  background: linear-gradient(var(--color-c11) 600px, var(--color-c01) 0);
+}
+
+.budget-bg {
+  background: linear-gradient(var(--color-c11) 50%, var(--color-c01) 50%);
+}
+
+.budget-container {
+  padding-bottom: 7.5rem;
+}
+
+.budget-form {
+  width: 100%;
+}
+
+.budget-content {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.budget-content > h2,
+.budget-product-options,
+.budget-product {
+  grid-column: 1;
+}
+
+.budget-content > h2 {
+  background: var(--color-c12);
+  color: var(--color-c05);
+  padding: 3.75rem 3.75rem 1.25rem;
+  text-transform: uppercase;
+}
+
+.budget-product-options {
+  background: var(--color-c12);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 3.75rem 1.25rem;
+}
+
+.budget-product-options input,
+.budget-options input {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.budget-product-options label,
+.budget-options label {
+  align-items: center;
+  background: var(--color-c10);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--color-c04);
+  cursor: pointer;
+  display: grid;
+  font: 600 1rem/1.5 'Poppins', sans-serif;
+  grid-template-columns: auto 1fr auto;
+  padding: 0.75rem 1rem;
+}
+
+.budget-product-options label::before,
+.budget-options label::before {
+  border: 1px solid var(--color-c06);
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: '';
+  height: 12px;
+  margin-right: 0.5rem;
+  width: 12px;
+}
+
+.budget-product-options input:checked + label,
+.budget-options input:checked + label {
+  background: var(--color-c00);
+  color: var(--color-c11);
+}
+
+.budget-product-options input:checked + label span {
+  color: var(--color-c11);
+}
+
+.budget-product-options input:checked + label::before,
+.budget-options input:checked + label::before {
+  border-color: var(--color-c07);
+  box-shadow: inset 0 0 0 3px var(--color-c00), inset 0 0 0 6px var(--color-c07);
+}
+
+.budget-product-options input:focus-visible + label,
+.budget-options input:focus-visible + label {
+  border-color: var(--color-p1);
+  box-shadow: 0 0 0 2px var(--color-p1);
+}
+
+.budget-product {
+  background: var(--color-c12);
+  display: none;
+  padding: 1.25rem 3.75rem 3.75rem;
+}
+
+.budget-product.is-active {
+  display: block;
+}
+
+.budget-product h3 {
+  color: var(--color-c05);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.budget-options {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.budget-options label span:first-of-type {
+  color: inherit;
+}
+
+.budget-options label span:last-of-type {
+  display: none;
+  justify-self: end;
+}
+
+.budget-options input:checked + label span:last-of-type {
+  display: inline;
+}
+
+.budget-data {
+  background: var(--color-c00) url('/img/dec/bottom-right.svg') no-repeat bottom 20px right 20px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 1.25rem;
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  grid-template-columns: 1fr 1fr;
+  padding: 3.75rem;
+}
+
+.budget-data h2,
+.budget-data button {
+  grid-column: 1 / -1;
+}
+
+.budget-data h2 {
+  color: var(--color-c11);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.form-row label {
+  color: var(--color-c11);
+  display: block;
+  font: 400 1rem/1.5 'Poppins', sans-serif;
+  margin-bottom: 0.25rem;
+}
+
+.form-row input {
+  background: var(--color-c01);
+  border: 1px solid var(--color-c02);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font: 400 1rem/1.5 'Roboto', sans-serif;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.form-row input:focus {
+  background: var(--color-c00);
+  border-color: var(--color-p1);
+  box-shadow: 0 0 0 2px #fea;
+  outline: none;
+}
+
+.form-row:nth-of-type(3),
+.form-row:nth-of-type(4) {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .budget-content {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-content > h2,
+  .budget-product-options,
+  .budget-product,
+  .budget-data {
+    grid-column: 1;
+  }
+
+  .budget-data {
+    border-radius: 0 0 5px 5px;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .budget-content > h2 {
+    padding: 2rem 1.25rem 1rem;
+  }
+
+  .budget-product-options,
+  .budget-product,
+  .budget-data {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .budget-product-options,
+  .budget-data {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-column: 1 !important;
+  }
+}

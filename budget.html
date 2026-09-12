@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Configure your Bikcraft bike or insurance plan." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="/img/favicon.svg" type="image/svg+xml" />
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+
+  <title>Budget | Bikcraft</title>
+</head>
+
+<body id="budget">
+  <header class="header-bg">
+    <div class="header-container structure-side">
+      <div class="logo-container">
+        <a href="/index.html">
+          <img src="/img/bikcraft.svg" alt="Bikcraft" />
+        </a>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <ul class="header-menu font-1-m color-c00">
+          <li><a href="/bikes.html">Bikes</a></li>
+          <li><a href="/insurance.html">Insurance</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="inner-bg-title">
+      <div class="title-container structure-side title">
+        <p class="inner-p-title font-2-xl color-c05">
+          Choose your option
+        </p>
+
+        <h1 class="font-1-xxl color-c00">
+          create your plan<span class="highlight-letter color-p1">.</span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="budget-bg">
+      <div class="budget-container structure-side">
+        <form class="budget-form" action="/budget.html" method="get">
+          <div class="budget-content">
+            <h2 class="font-1-l color-c00">Choose your product</h2>
+
+            <div class="budget-product-options">
+              <input type="radio" name="type" id="bikcraft" value="bikcraft" />
+
+              <label for="bikcraft">
+                <span class="font-1-m color-c00">Bikcraft bike</span>
+              </label>
+
+              <input type="radio" name="type" id="insurance" value="insurance" />
+
+              <label for="insurance">
+                <span class="font-1-m color-c00">Insurance</span>
+              </label>
+            </div>
+
+            <div id="bikcraft-budget" class="budget-product">
+              <h3 class="font-1-s color-c00">Choose your bike</h3>
+
+              <div class="budget-options">
+                <input type="radio" name="product" id="nimbus" value="nimbus" />
+                <label for="nimbus">
+                  <span class="font-1-m color-c00">Nimbus Stark</span>
+                  <span class="font-2-s color-c05">R$ 4,999</span>
+                </label>
+
+                <input type="radio" name="product" id="magic" value="magic" />
+                <label for="magic">
+                  <span class="font-1-m color-c00">Magic Might</span>
+                  <span class="font-2-s color-c05">R$ 2,499</span>
+                </label>
+
+                <input type="radio" name="product" id="nebula" value="nebula" />
+                <label for="nebula">
+                  <span class="font-1-m color-c00">Nebula Cosmic</span>
+                  <span class="font-2-s color-c05">R$ 3,999</span>
+                </label>
+              </div>
+            </div>
+
+            <div id="insurance-budget" class="budget-product">
+              <h3 class="font-1-s color-c00">Choose your plan</h3>
+
+              <div class="budget-options">
+                <input type="radio" name="product" id="silver" value="silver" />
+                <label for="silver">
+                  <span class="font-1-m color-c00">Silver</span>
+                  <span class="font-2-s color-c05">R$ 199 / month</span>
+                </label>
+
+                <input type="radio" name="product" id="gold" value="gold" />
+                <label for="gold">
+                  <span class="font-1-m color-c00">Gold</span>
+                  <span class="font-2-s color-c05">R$ 299 / month</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="budget-data">
+              <h2 class="font-1-l color-c00">Your information</h2>
+
+              <div class="form-row">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" required />
+              </div>
+
+              <div class="form-row">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" required />
+              </div>
+
+              <div class="form-row">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" inputmode="numeric" required />
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+
+              <div class="form-row">
+                <label for="zip-code">ZIP code</label>
+                <input type="text" id="zip-code" name="zip-code" autocomplete="postal-code" required />
+              </div>
+
+              <div class="form-row">
+                <label for="house-number">Number</label>
+                <input type="text" id="house-number" name="house-number" required />
+              </div>
+
+              <div class="form-row">
+                <label for="street">Street</label>
+                <input type="text" id="street" name="street" autocomplete="street-address" required />
+              </div>
+
+              <div class="form-row">
+                <label for="neighborhood">Neighborhood</label>
+                <input type="text" id="neighborhood" name="neighborhood" required />
+              </div>
+
+              <div class="form-row">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" autocomplete="address-level2" required />
+              </div>
+
+              <div class="form-row">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" autocomplete="address-level1" required />
+              </div>
+
+              <button class="btn" type="submit">
+                Request quote
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer-container structure-side">
+      <div class="logo-container">
+        <a href="/index.html">
+          <img src="/img/bikcraft.svg" alt="Bikcraft" width="136" height="32" />
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <h2 class="footer-subtitle font-2-l-b color-c00">CONTACT</h2>
+
+        <ul class="footer-list font-2-m color-c05">
+          <li>+55 21 9999-9999</li>
+          <li>contact@bikcraft.com</li>
+          <li>Rua Ali Perto, 42 - Botafogo</li>
+          <li>Rio de Janeiro - RJ</li>
+        </ul>
+
+        <ul class="social-network-list">
+          <li>
+            <a href="/" aria-label="Instagram">
+              <img src="/img/redes/instagram.svg" alt="" width="32" height="32" />
+            </a>
+          </li>
+
+          <li>
+            <a href="/" aria-label="Facebook">
+              <img src="/img/redes/facebook.svg" alt="" width="32" height="32" />
+            </a>
+          </li>
+
+          <li>
+            <a href="/" aria-label="YouTube">
+              <img src="/img/redes/youtube.svg" alt="" width="32" height="32" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="info-container">
+        <h2 class="footer-subtitle font-2-l-b color-c00">INFORMATION</h2>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer-list font-2-m color-c05">
+            <li><a href="/bikes.html">Bikes</a></li>
+            <li><a href="/insurance.html">Insurance</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/terms.html">Terms and Conditions</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="font-2-m color-c06 footer-copy">
+        <p>Bikcraft &copy; All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

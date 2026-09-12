@@ -1,0 +1,23 @@
+.terms-bg {
+  background: var(--color-c00);
+}
+
+.terms-container {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.terms-container h2 {
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.terms-container p {
+  color: var(--color-c08);
+  margin-bottom: 2.5rem;
+  max-width: 75ch;
+}
+
+.terms-container p:last-child {
+  margin-bottom: 0;
+}

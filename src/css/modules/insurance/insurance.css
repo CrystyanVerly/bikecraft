@@ -1,0 +1,152 @@
+.insurance-plans-bg {
+  background: var(--color-c11);
+}
+
+.insurance-plans-container {
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+}
+
+.insurance-plan {
+  background: var(--color-c12);
+  border-radius: 4px;
+  padding: 2rem 2rem 2rem 3.75rem;
+}
+
+.insurance-plan-header {
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.insurance-plan-header p {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.insurance-plan ul {
+  margin-bottom: 2rem;
+}
+
+.insurance-plan li {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.insurance-plan li::before {
+  background: url('/img/icones/lista.svg') no-repeat center;
+  content: '';
+  height: 9px;
+  left: -21px;
+  position: absolute;
+  width: 13px;
+}
+
+.insurance-plan li + li {
+  margin-top: 1.25rem;
+}
+
+.advantages-bg {
+  background: var(--color-c12);
+}
+
+.advantages-container {
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+}
+
+.advantages-container > h2 {
+  color: var(--color-c00);
+  margin-bottom: 3.75rem;
+}
+
+.advantages-list {
+  display: grid;
+  gap: 2.5rem 5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advantages-list img {
+  height: 32px;
+  width: 32px;
+}
+
+.advantages-list h3 {
+  margin: 0.5rem 0;
+}
+
+.FAQ-bg {
+  padding: 7.5rem 0;
+}
+
+.FAQ-container > h2 {
+  margin-bottom: 3.75rem;
+}
+
+.question-container > div {
+  border-radius: 4px;
+  padding: 1.25rem;
+}
+
+.question-container > div:nth-child(odd) {
+  background: var(--color-c01);
+}
+
+.FAQ-bg button {
+  align-items: center;
+  background: none;
+  color: var(--color-c11);
+  cursor: pointer;
+  display: flex;
+  font: 600 1.125rem/1.35 'Poppins', sans-serif;
+  gap: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.FAQ-bg button::before {
+  background-color: var(--color-p1);
+  content: '';
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 8px;
+  width: 12px;
+}
+
+.FAQ-bg button::after {
+  background: url('/img/icones/seta-abrir.svg') no-repeat center;
+  content: '';
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 6px;
+  margin-left: auto;
+  transition: transform 0.3s;
+  width: 14px;
+}
+
+.FAQ-bg button:hover::after,
+.FAQ-bg button[aria-expanded='true']::after {
+  transform: rotate(180deg);
+}
+
+.FAQ-bg dd {
+  margin-left: 20px;
+  margin-top: 1rem;
+  max-width: 80ch;
+}
+
+.js .FAQ-bg dd {
+  display: none;
+}
+
+.js .FAQ-bg dd.accordion-active {
+  display: block;
+}

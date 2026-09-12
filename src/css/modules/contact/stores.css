@@ -1,0 +1,48 @@
+.stores-bg {
+  background: var(--color-c01);
+}
+
+.stores {
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+}
+
+.stores > h2 {
+  margin-bottom: 3.75rem;
+}
+
+.stores-list {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stores-list article {
+  background: var(--color-c00);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.stores-list article > img {
+  border-radius: 4px 4px 0 0;
+  max-height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.stores-list h3,
+.stores-list p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.stores-list h3 {
+  color: var(--color-c11);
+  margin-top: 2rem;
+}
+
+.stores-list p {
+  margin-bottom: 2rem;
+  margin-top: 0.75rem;
+}

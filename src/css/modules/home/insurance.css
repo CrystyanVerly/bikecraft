@@ -1,0 +1,29 @@
+.insurance-bg {
+  background: var(--color-c11);
+}
+
+.insurance-container {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+}
+
+.insurance-content {
+  align-self: center;
+}
+
+.insurance-content h2 {
+  margin: 0.75rem 0 2rem;
+}
+
+.insurance-content > p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.insurance-image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

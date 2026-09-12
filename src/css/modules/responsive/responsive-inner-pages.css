@@ -1,0 +1,117 @@
+@media (max-width: 945px) {
+  .bikes-item > a {
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 845px) {
+  .inner-bg-title {
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .terms-container {
+    padding-bottom: 3.75rem;
+    padding-top: 3.75rem;
+  }
+
+  .inner-p-title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+
+  .bikes-information-bg {
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .bikes-gallery-container {
+    grid-row: 2;
+  }
+
+  .insurance-bike-bg {
+    background-color: var(--color-c11);
+    box-shadow: inset 0 -60px var(--color-c12);
+  }
+
+  .insurance-bike-container {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-bike-content {
+    grid-row: 1;
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
+
+  .insurance-plans-container,
+  .advantages-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-container,
+  .contact-address {
+    padding: 2rem;
+  }
+
+  .contact-form-container {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .contact-address {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .stores {
+    padding-bottom: 3.75rem;
+    padding-top: 3.75rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .bikes-item > a {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+
+  .bikes-item-image img {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .insurance-plans-container,
+  .advantages-list,
+  .stores-list,
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form > div,
+  .contact-form > button {
+    grid-column: 1;
+  }
+
+  .insurance-plan {
+    padding: 2rem 2rem 2rem 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .bike-infos {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-container {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+}

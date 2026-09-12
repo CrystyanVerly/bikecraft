@@ -1,0 +1,26 @@
+* {
+  border: 0;
+  font: inherit;
+  font-family: "Poppins", serif, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}

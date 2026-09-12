@@ -1,0 +1,36 @@
+.header-bg {
+	background-color: var(--color-c12);
+}
+.header-container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	justify-content: space-between;
+	padding: 1.25rem;
+}
+.header-menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+	place-content: center;
+}
+.header-menu a {
+	cursor: pointer;
+	padding: 1rem 0;
+	position: relative;
+}
+.header-menu a::before {
+	background-color: var(--color-c00);
+	bottom: var(--gap-size-012);
+	content: '';
+	display: inline-block;
+	height: 2px;
+	position: absolute;
+	transition: width 0.3s ease-in-out;
+	width: 0%;
+}
+.header-menu a:hover::before,
+.header-menu a.menu-active::before {
+	width: 100%;
+}
